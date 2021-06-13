@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Saira + Extra + Condensado: wght @ 100 & display = swap "rel =" stylesheet ">  
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+    <div class="parent"></div>
+
+        <div class="sidebar">
+
+            <div class="sidebar-pos">
+                <div class="img-sidebar">
+                    <img src="logo.jpg" />
+                </div>
+
+                <div class="menu">
+                    <a class="selected" href="#">Missão</a>
+                    <a href="#">Visão</a>
+                    <a href="#">Saiba mais:</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="content">
+
+            <section class="descricao">
+                <h2><span>Organike</span> Alimentos</h2>
+                <h3>Garanhuns   -   Pernambuco  -   Brasil</h3>
+                <p>A solução em sua busca por produtos orgânicos!</p>
+                
+                <div class="icons-social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </section>           
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h1 id="titulo"><br/>Lista de Cadastro</h1></h1>
+                    <p id="subtitulo">Preencha o Formulário:</p>
+                    <br>
+                </div>
+        
+                <form name="f_cad" method="get" action="index.php">
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome"><strong>Nome:</strong></label>
+                            <input type="text" name="nome" id="nome" required> 
+                        </div>
+        
+                        <div class="campo">
+                            <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required> 
+                        </div>
+                    </fieldset>
+        
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" required>        
+                    </div>
+        
+                    <div class="campo">
+                        <label><strong>Escolha seu perfil:</strong></label>
+                        <label>
+                            <input type="radio" name="perfil" value="comprador" >Comprador
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="perfil" value="fornecedor">Fornecedor
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="perfil" value="vendedor">Vendedor
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo"><strong>Qual tipo de produto você pretende mais comprar/fornecer/vender?</strong></label>
+                        <select name="tipo" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>Frutas</option>
+                          <option>Legumes</option>
+                          <option>Verduras</option>
+                        </select>
+                    </div>       
+                    
+        
+                    <div class="campo">
+                        <br>
+                        <label for="historia"><strong>Fique a vontade em nos falar um pouco de sua história com produtos orgânicos:</strong></label>
+                        <textarea row="6" style="width: 26em" id="historia" name="historia"></textarea>
+                    </div> 
+        
+                    <button class="botao" type="submit">Enviar</button>
+                </form>
+
+    </body>
+
+</html>

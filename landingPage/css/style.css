@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    
+}
+
+html,body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: royalblue;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+
+.img-sidebar{text-align: center;}
+
+
+.img-sidebar img{
+    width: 80%;
+    border: 3px solid white;
+    border-radius: 50%;
+    
+}
+
+.menu{
+    margin:20px;
+    text-align: center;    
+}
+
+.menu a{
+    color: white;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;    
+    overflow-y: auto;
+    padding: 0 3%;
+    background-color: thistle;
+}
+
+section.descricao{
+    position: relative;
+    top:25%;
+    transform: translateY(-50%);
+}
+
+section.descricao h2 {
+    font-size: 46px;
+}
+
+section.descricao h2 > span{
+    color: green;
+}
+
+section.descricao h3{
+    margin:15px 0;
+    color: darkgrey;
+    font-size: 25px;
+}
+
+section.descricao p{
+    color: yellowgreen;
+    font-size: 20px;
+    margin-top:40px;
+}
+
+.icons-social{
+    margin-top:20px;
+}
+
+.icons-social a{
+    text-decoration: none;
+    color: write;
+    background-color: darkgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin:0 10px;
+    text-align: center;
+}
+
+.icons-social i{
+    line-height: 40px;
+}
+
+#titulo{
+    font-family: sans-serif;
+    color: green;
+    margin-left: 7%;
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: green;
+    margin-left: 10%;
+}
+
+fieldset{
+    border:0;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-top: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: green;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid green;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em; 
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.botao, select{   
+    cursor: pointer;
+}
+
+.botao:hover{
+    background: yellowgreen;
+    box-shadow: inset 2px 2px 2p;
+    text-shadow: none;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: green;
+    border: 0;
+    margin-bottom: 1em;
+    color: cornsilk;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: unset;
+    
+}
